@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	</head>
+ <body>
+  <label>Nome:</label> 
+  <input id="nome"  type="text" />
+  <script src="js/jquery.js"></script>
+  <script>
+    $('#nome').on('blur', function() {
+        var texto = $(this).val();
+        if(!texto) {
+            alert("Não deve ser vazio!");
+        }
+    });
+  </script>
+ </body>
+</html>
